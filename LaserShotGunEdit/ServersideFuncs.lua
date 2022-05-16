@@ -86,6 +86,17 @@ local function FadeOutObjects(objectsWithTransparency, fadeIncrement)
 	until lastObject.Transparency >= 1 or not lastObject
 end
 
+local function FadeOutObjects(objectsWithTransparency, fadeIncrement)
+	repeat
+		local lastObject = nil
+		for _, object in pairs(objectsWithTransparency) do
+			object.Transparency = object.Transparency + fadeIncrement
+			lastObject = object
+		end
+		wait()
+	until lastObject.Transparency >= 1 or not lastObject
+end
+
 local function Dematerialize(character, humanoid, firstPart)
 	humanoid.WalkSpeed = 0
 
