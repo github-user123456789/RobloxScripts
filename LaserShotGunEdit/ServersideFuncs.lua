@@ -1,4 +1,5 @@
-function Func()
+local function Func()
+print("running funcs")
 local DebrisService = game:service("Debris")
 
 local FireSound = Handle:WaitForChild('Fire')
@@ -156,7 +157,8 @@ local function OnTouched(shot, otherPart)
 		Dematerialize(character, humanoid, otherPart)
 	end
 end
-  return FindCharacterAncestor, ApplyTags, GetTransparentsRecursive, SelectionBoxify, Light, FadeOutObjects, Dematerialize, OnTouched
+
+return FindCharacterAncestor, ApplyTags, GetTransparentsRecursive, SelectionBoxify, Light, FadeOutObjects, Dematerialize, OnTouched
 end
 
 return Func
