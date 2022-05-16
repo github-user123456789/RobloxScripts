@@ -143,7 +143,8 @@ local function Dematerialize(character, humanoid, firstPart)
 	FadeOutObjects(selectionBoxes, fadeIncrement)
 end
 
-local function OnTouched(shot, otherPart)
+local function OnTouched(shot, otherPart, charaaa)
+	Character = charaaa
 	local character, humanoid = FindCharacterAncestor(otherPart)
 	if character and humanoid and character ~= Character then
 		ApplyTags(humanoid)
