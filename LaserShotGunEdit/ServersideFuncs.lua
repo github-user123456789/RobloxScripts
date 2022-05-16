@@ -155,6 +155,7 @@ local function OnTouched(shot, otherPart)
 		end
 		Dematerialize(character, humanoid, otherPart)
 	end
+end
   return FindCharacterAncestor, ApplyTags, GetTransparentsRecursive, SelectionBoxify, Light, FadeOutObjects, Dematerialize, OnTouched
 end
 
