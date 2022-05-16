@@ -1,4 +1,5 @@
-local function Func()
+local function Func(Handle)
+local Tool = Handle.Parent
 print("running funcs")
 local DebrisService = game:service("Debris")
 
