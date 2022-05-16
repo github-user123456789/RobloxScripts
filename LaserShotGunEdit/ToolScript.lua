@@ -39,7 +39,7 @@ local function OnActivated()
 	if Tool.Enabled and Humanoid.Health > 0 then
 		Tool.Enabled = false
 		
-		script:WaitForChild'RemoteEvent':FireServer()
+		script:WaitForChild'RemoteEvent':FireServer(SHOT_SPEED, SHOT_TIME, Player:GetMouse().Hit.p)
 		wait(1.25)
 
 		Tool.Enabled = true
