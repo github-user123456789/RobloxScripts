@@ -3,7 +3,7 @@ local DebrisService = game:service("Debris")
 
 local FireSound = Handle:WaitForChild('Fire')
 local ReloadSound = Handle:WaitForChild('Reload')
-local HitFadeSound = script:WaitForChild('HitFade')
+local HitFadeSound = Handle.Parent.ToolScript:WaitForChild('HitFade')
 
 local PointLight = Handle:WaitForChild('PointLight')
 
