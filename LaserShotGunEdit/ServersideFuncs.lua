@@ -137,7 +137,8 @@ local function Dematerialize(character, humanoid, firstPart)
 	Delay(0.2, function()
 		FadeOutObjects({firstSelectionBox}, fadeIncrement)
 		if character then
-			character:Destroy()
+			--character:Destroy()
+			game.Debris:AddItem(character, 0)
 		end
 	end)
 	FadeOutObjects(selectionBoxes, fadeIncrement)
