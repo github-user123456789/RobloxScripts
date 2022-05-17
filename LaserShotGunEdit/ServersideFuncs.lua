@@ -108,7 +108,8 @@ local function Dematerialize(character, humanoid, firstPart)
 			child.Anchored = true
 			table.insert(parts, child)
 		elseif child:IsA('LocalScript') or child:IsA('Script') then
-			child:Destroy()
+			--child:Destroy()
+			DebrisService:AddItem(child, 0)
 		end
 	end
 
